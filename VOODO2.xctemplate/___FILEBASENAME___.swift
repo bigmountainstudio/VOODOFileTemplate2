@@ -4,13 +4,11 @@
 import SwiftUI
 
 struct ___FILEBASENAMEASIDENTIFIER___View: View {
-    @StateObject private var oo = ___FILEBASENAMEASIDENTIFIER___OO()
+    @State private var oo = ___FILEBASENAMEASIDENTIFIER___OO()
     
     var body: some View {
-        VStack {
-            List(oo.data) { datum in
-                Text(datum.name)
-            }
+        List(oo.data) { datum in
+            Text(datum.name)
         }
         .task {
             oo.fetch()
@@ -18,18 +16,17 @@ struct ___FILEBASENAMEASIDENTIFIER___View: View {
     }
 }
 
-struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
-    static var previews: some View {
-        ___FILEBASENAMEASIDENTIFIER___View()
-    }
+#Preview {
+    ___FILEBASENAMEASIDENTIFIER___View()
 }
 
 // Observable Object
-import Combine
+import Observation
 import SwiftUI
 
-class ___FILEBASENAMEASIDENTIFIER___OO: ObservableObject {
-    @Published var data: [___FILEBASENAMEASIDENTIFIER___DO] = []
+@Observable
+class ___FILEBASENAMEASIDENTIFIER___OO {
+    var data: [___FILEBASENAMEASIDENTIFIER___DO] = []
     
     func fetch() {
         data = [___FILEBASENAMEASIDENTIFIER___DO(name: "Datum 1"),
