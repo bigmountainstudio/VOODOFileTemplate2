@@ -19,7 +19,8 @@ Add the VOODO.xctemplate to this directory:
 # In Xcode
 1. Start Xcode and add a new file.
 1. Scroll down until you see the **Custom** section and select VOODO:
-![image](https://user-images.githubusercontent.com/24855856/125980564-a21fc5f1-d0f3-4405-b3a9-85375634b02b.png)
+![new file dialog](https://github.com/bigmountainstudio/VOODOFileTemplate2/assets/24855856/daf67dfc-c0ad-4957-a6d4-889fbd557894)
+
 
 # Example Output
 ```swift
@@ -39,16 +40,15 @@ struct PersonView: View {
     }
 }
 
-struct Person_Previews: PreviewProvider {
-    static var previews: some View {
-        PersonView()
-    }
+#Preview {
+    PersonView()
 }
 
 // Observable Object
 import Observation
 import SwiftUI
 
+@Observable
 class PersonOO {
     var data: [PersonDO] = []
     
