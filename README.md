@@ -79,9 +79,9 @@ From here, you can:
 * Change the template to use any naming convention you want
 
 # Resources
-For more information on this architecture and how to work with data in SwiftUI, take a look at this book: **Working with Data in SwiftUI**.
+For more information on this architecture and how to work with data in SwiftUI, take a look at this book: **SwiftUI Essentials: Architecting Scalable & Maintainable Apps**.
 
-![working with data in swiftui](https://user-images.githubusercontent.com/24855856/125804293-5f4ec808-220d-41a7-b1ce-9caebc06069e.png)
+![swiftui essentials](https://github.com/bigmountainstudio/VOODOFileTemplate2/assets/24855856/5b29a2ea-a8ab-4a5e-bcf0-bf09bcee9a5f)
 
-[Learn More](https://www.bigmountainstudio.com/data)
+[Learn More](https://www.bigmountainstudio.com/essentials)
 
